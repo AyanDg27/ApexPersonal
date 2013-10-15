@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ApexPersonal</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class = "application-wrapper">
+	<header class = "header" id = "header">
+		<a href = '/'><%= image_tag '', alt: 'header image', class: 'header-image' %></a>	
+
+		<nav class = 'main-nav' id = "main_nav">
+			<div class = 'left-nav'>
+				<%= link_to 'HOME', '/', class: 'nav-button' %>
+				<%= link_to 'ABOUT', 'about', class: 'nav-button' %>
+			</div>
+
+			<div class = 'right-nav'>
+				<%= link_to 'PROJECTS', 'projects', class: 'nav-button' %>
+				<%= link_to 'CONTACT', 'contact', class: 'nav-button' %>
+			</div>
+		</nav>
+	</header>
+
+	<div class = 'yield-wrapper'>
+		<%= yield %>
+	</div>
+	
+</div>
+</body>
+</html>
