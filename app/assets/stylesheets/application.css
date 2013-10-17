@@ -72,7 +72,7 @@ nav li:last-child a {
 	border-right: 0;
 }
 
-nav a:hover, nav a#active {
+nav a:hover, nav a#active, nav a:visited {
 	background-color: #0177C1;
 	color: #C6F0FF;
 }
@@ -97,6 +97,9 @@ a:hover{
 	color: pink;
 }
 
+/*a:visited{
+	color: silver;
+}*/
 
 h1, h2, h3, h4, h5, h6{
 	font-family: calibri, sans-serif;
@@ -137,6 +140,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b5fe5', end
 	position: absolute;
 	top: 27%;
 	right: 10%;
-	width: 30%;
+	width: 35%;
 	height: auto;
+}
+
+.logo-left{
+	position: absolute;
+	left: 1%;
+	top: 5%;
+	width: 20%;
+	height: 85%;
+}
+
+.logo-right{
+	position: absolute;
+	right: 1%;
+	top: 7.5%;
+	width: 14%;
+	height: 85%;
 }
